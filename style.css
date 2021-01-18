@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Paytone One', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* counter, timer y result */
+.extras {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 80vw;
+}
+
+h1 {
+    font-size: 25px;
+    color:rgb(36, 29, 133);
+    text-align: center;
+    margin: 2px;
+}
+
+h3, #result  {
+    font-size: 20px;
+    font-weight: 400px;
+    margin: 2px;
+}
+
+h3, h4 {
+    font-size: 20px;
+    display: block;
+    color: rgb(44, 44, 160);
+}
+
+#result, #counter, #timer {
+    color: rgb(194, 85, 113);
+}
+
+
+/* Espacio para las tarjetas */
+.grid, .grod {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    width: 380px;
+    margin: auto;
+}
+
+
+/* Estilo de las tarjetas */
+.mystyle, .big {
+    box-shadow:  3px 3px rgb(74, 75, 136);
+    margin: 3px;
+    padding: 3px;
+    border-radius: 0.5rem;
+    width: 80px;
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+
+
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(194, 85, 113);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(36, 29, 133);
+}
+
+@media (max-width: 450px) {
+    .mystyle{
+        width: 60px;
+        height: 60px;
+    }
+    .grid {
+        width: 300px;
+    }
+}
